@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Audio Visualizer (Interactive)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="drop-overlay" class="hidden">
+        <div class="drop-text">Drop Audio File Here</div>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <div class="dashboard" id="dashboard">
+        <div class="section">
+            <button id="btn-start" class="btn">Use Mic</button>
+            <button id="btn-stop" class="btn">Stop</button>
+            <button id="btn-fullscreen" class="btn">Fullscreen</button>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section controls-grid">
+            
+            <div class="control-item">
+                <label for="sensitivity">Sensitivity</label>
+                <input type="range" id="sensitivity" min="0.1" max="5.0" step="0.1" value="1.5">
+            </div>
+
+            <div class="control-item">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="auto-color" checked> 
+                    Rainbow Mode
+                </label>
+            </div>
+
+            <div class="control-item" id="manual-color-group">
+                <label for="bg-color">Static Color</label>
+                <input type="color" id="mesh-color" value="#00ffcc">
+            </div>
+        </div>
+
+        <div class="status" id="status-text">Ready (Drop MP3 or Click Start)</div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
