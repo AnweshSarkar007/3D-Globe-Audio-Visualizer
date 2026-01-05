@@ -1,10 +1,23 @@
 # 3D-Globe-Audio-Visualizer
 A browser-based 3D audio visualizer built with Three.js and the Web Audio API. This application transforms audio input—via live microphone or drag-and-drop file upload—into a stunning, real-time 3D experience. At its core is a dynamic wireframe sphere that distorts and pulses in sync with bass frequencies, rendered with a neon "Bloom".
 
- Features🎧 
- Dual Audio Input:Live Microphone: Visualizes your voice or ambient music in real-time.Drag & Drop Player: Drag any MP3/WAV file onto the screen to play it with perfect digital clarity.🔮 Reactive 3D Geometry:Bass Response: The central sphere distorts and stretches based on low-frequency energy.Starfield: Background stars rotate faster as the volume increases.Camera Shake: High-intensity bass drops trigger a physical camera shake effect.🕹️ Interactive Experience:Orbit Controls: Click and drag to rotate around the visualizer; scroll to zoom in/out.Smart Dashboard: A floating UI controls sensitivity, color modes, and fullscreen toggles.Auto-Hide: The dashboard vanishes automatically during fullscreen immersion.🎨 Visual Effects:Bloom Post-Processing: Adds a neon "glow" to the wireframes.Rainbow Mode: optional automatic color cycling.🛠️ Technologies UsedThis project is built using modern web standards without heavy frameworks or build steps.Three.js (r160) - The core 3D graphics engine.EffectComposer: For post-processing chains.UnrealBloomPass: For the glowing neon effect.OrbitControls: For camera interaction.Web Audio API - For real-time frequency analysis (AnalyserNode) and audio decoding.HTML5 & CSS3 - For the overlay dashboard, drag-and-drop interface, and responsive layout.Vanilla JavaScript (ES6+) - Modular code structure using native ES Modules (importmap).🚀 How to Run LocallyBecause this project uses the microphone and ES6 modules, you cannot simply open the index.html file in a browser. You must serve it via a local server (due to CORS policies).Option 1: VS Code (Recommended)Install the Live Server extension for VS Code.Open the project folder in VS Code.Right-click index.html and select "Open with Live Server".Option 2: PythonIf you have Python installed, run this command in the project terminal:Bash# Python 3
-python -m http.server 8000
+Features🎧 
+Dual Audio Input:Live Microphone: Visualizes your voice or ambient music in real-time.
+Drag & Drop Player: Drag any MP3/WAV file onto the screen to play it with perfect digital clarity.
+Reactive 3D Geometry:Bass Response: The central sphere distorts and stretches based on low-frequency energy.
+Starfield: Background stars rotate faster as the volume increases.Camera Shake: High-intensity bass drops trigger a physical camera shake effect.
+Interactive Experience:Orbit Controls: Click and drag to rotate around the visualizer; scroll to zoom in/out.
+Smart Dashboard: A floating UI controls sensitivity, color modes, and fullscreen toggles.
+Auto-Hide: The dashboard vanishes automatically during fullscreen immersion.
+Visual Effects:Bloom Post-Processing: Adds a neon "glow" to the wireframes.
+Rainbow Mode: optional automatic color cycling.
 
-🎮 Usage ControlsControlActionStart / MicActivates the microphone input.Drag & DropDrag an audio file anywhere on the screen to play it.Left Click + DragRotate the camera around the sphere.ScrollZoom in and out.Right Click + DragPan the camera.SensitivitySlider to adjust how much the sphere reacts to bass.Rainbow ModeToggles automatic color cycling.🤝 ContributingContributions, issues, and feature requests are welcome!Fork the ProjectCreate your Feature Branch (git checkout -b feature/AmazingFeature)Commit your Changes (git commit -m 'Add some AmazingFeature')Push to the Branch (git push origin feature/AmazingFeature)Open a Pull Request
+
+Usage ControlsControlActionStart / MicActivates the microphone input.
+Drag & DropDrag an audio file anywhere on the screen to play it.
+Left Click + DragRotate the camera around the sphere.
+ScrollZoom in and out.
+Right Click + DragPan the camera.SensitivitySlider to adjust how much the sphere reacts to bass.
+Rainbow ModeToggles automatic color cycling.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fa34ef91-b008-448e-9668-7e29d81312fc" />
